@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Weather App </title>    
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">   
+    <!-- CDN - Bootstrap for CSS -->
+
+<link rel="stylesheet" href= "CSS/style.css">     
+    
+</head> 
+<body>
+
+<nav class = "navbar navbar-default" id="nav_custom">
+    <div class="container">
+        <div class= "navbar-header">
+            <a href="" class="navbar-brand navbar-link" id="weather"> 
+                <img src="CSS/images/logo.png" alt="" class="img-responsive" id="logo" ><Strong>Weather App</Strong>
+            </a> 
+           <button class= "navbar-toggle collapsed" data-toggle="collapse" data-target="navigationWebsite">           <!-- whenever we reduce the size of the screen, give me a toggle menu - mobile screen firendly-->
+          
+                <span class="sr-only">Toggle navigation</span>     <!-- for screen readers properties -->
+                <span class="icon-bar"></span>                     <!-- adding 3 lines for the toggle menu -->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+               
+            </button> 
+        </div>  
+
+   <div class= "collapse navbar-collapse" id="navigationWebsite">     
+        <!-- navigation bar and a set of unordered lists targeted on Navcol -->
+        <ul class= "nav navbar-nav navbar-right" id="navigation_list">  <!-- displaying on the right side of navbar -->
+          
+           <li><a href= "forecast.html">Forecast</a></li> <!-- refrencing forecast.html -->
+           <li><a href="https://openweathermap.org/" target="_blank">Learn more</a></li> <!-- refrencing openweather-->
+			<li><a href= "https://www.linkedin.com/in/pooriya-balavi/" target="_blank">About Me</a></li>  <!-- refrencing current.html -->
+       </ul>
+    
+    </div>
+        
+    </div>
+    
+</nav>  
+    
+   
+<div class="row" id="row">  
+    <div class= "col-md-12" id="columnText">
+        <h2 class="text-center" id="columnText1"> Get the latest wather information <br> from any city based on its:</h2>
+        
+        <ul class= "list-inline" id="list-item">    <!-- the received data from the API-->
+            <li>Temperature</li>
+            <li>Pressure</li>
+            <li>Windspeed</li>
+            <li>Humidity</li>
+        </ul>
+    
+    </div>
+    
+    
+</div>
+	
+<div class="container" style="height: 400px;">   <!-- inclduing the div for the search bar-->
+    <div class="row" id="cityDiv">
+        <div class="col-med-12">
+            <h3 class="text-center text-primary">Enter City Name</h3>    <!--- User input-->
+			<span id="error" class="text-center"></span>     <!-- handling the empty search bar --> 
+        </div>
+        
+        <div class="row form-group form-inline" id="cityDiv">  <!--- User field-->
+            <input type="text" name="city" id="city" class="form-control" placeholder="Your city" >
+            <button id="enterCity" class="btn btn-primary">Search</button>
+            <!-- button event is handled in weather.js -->
+        </div>
+        
+      
+    </div>
+	
+	
+	<div id="showWeather"></div>
+</div>    	
+    
+    
+    <div class="footer">
+	<div class=container>
+		<div class="row">
+			<p style=color:white>Copyrights &copy; Weather app for chalmers teknologkonsulter</p>
+		</div>
+	</div>
+	
+</div>   
+    
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    <!-- Jquery plugin -->
+    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  <!-- CDN - Bootstrap for JavaScript -->
+	
+<script src="JS/weather.js"></script> 	
+</body>    
+</html>

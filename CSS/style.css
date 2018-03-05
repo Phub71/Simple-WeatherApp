@@ -1,0 +1,122 @@
+body{
+    font-family: 'Tangerine', serif;
+    background-color: whitesmoke; 
+    font-size: 20px; 
+    margin: 0;
+    padding: 0; 
+}
+
+
+
+#nav_custom{
+    margin-bottom: 0px;    /* anything below the navbar has zero margin to it*/
+    padding: 0; 
+    background-color: whitesmoke ; 
+    border: none;
+    
+} 
+
+#weather{
+    color: #4aa1f3; 
+    font-size: 25px; 
+    font-weight: 600;
+}
+
+#navigation_list > li > a{
+    color: #4aa1f3; 
+    
+}
+
+#logo{
+    max-height: 42px;
+   /* margin-right: 8px; */
+    display: inline-block; 
+    margin-top: -15px;
+}
+
+#row{
+    background: url(images/globe.png) no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 450px; 
+    margin-top: 0px;
+}
+
+#columnText1{
+    color: dark;
+    padding-top: 70px;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+
+
+#list-item{
+    color: dark;
+    font-size: 35px;
+	padding-bottom: 25px;
+    font-style: oblique;
+    text-align: center; 
+    
+}
+
+
+#cityDiv{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+input[type='text']{
+    font-size: 20px;
+    height: 40px;
+}
+
+#enterCity{
+    font-weight: bold;
+    height: 40px;
+  
+}
+
+#errorCT{
+	width: 70%;
+	margin: auto;
+	text-align: center;
+}
+
+.footer{
+	background-color:  #4aa1f3;
+	width: 100%;
+	height: 90px;
+	margin-top: 200px;
+	bottom: 0;
+	padding-top: 50px;
+	text-align: center;
+	font-size: 16px;
+}
+
+#showWeather{
+	width: 60%;
+	margin: auto;
+	background-color: brown;
+	color: white;
+	border-radius: 25px;
+}
+
+table{
+	color: ye;
+	font-family: Helvertical, Arial, sans-serif;
+	
+}
+
+th{
+	background: #4aa1f3;
+	font-weight: bold;
+	font-size: 18px;
+	color:white;
+}
+
+td{
+	text-align: center;
+	font-size: 18px;
+}
